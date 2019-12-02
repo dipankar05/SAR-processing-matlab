@@ -94,3 +94,10 @@ imshow(stretched_rgbImage2);
 axis('image');
 % caxis([0 1]);
 title('Pauli-RGB-MATLAB2');
+
+%%
+%Save visualized RGB .png file in same path
+figname_png12 = strcat([path,'PauliRGB(decorrstretch).png']);
+print(f12,figname_png12,'-dpng')
+fclose('all');
+%%  end of code
